@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p {
+    font-family: tahoma;
+    color: #333;
+    padding-top: 1em;;
+    margin-bottom: 1em ;
+}
+
+
+.container2 {
+    position: absolute;
+    background-color:black;
+    opacity: 0.7;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+}
+.myForm{
+    position: fixed;
+    background-color: white;
+    z-index: 2;
+    width: 600px;
+    min-height: 200px;
+    border-radius: 5px;
+    border: 1px #cdcdcd ;
+    top: 40%;
+    left:25%;
+    padding: 1% 0;
+}
+.formHeader {
+    height: 50px;
+}
+h1,
+.corner {
+    display: inline;
+}
+h1 {
+    margin-left:15px;
+}
+.corner{
+    position: absolute;
+    right: 5px;
+    background-color:#333;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 15px;
+    width: 20px;
+    height: 20px;
+}
+.formFooter {
+    height: 50px;
+}
+.formContainer{
+    height: 100px;
+    padding: 15px 0;
+    text-align: center;
+}
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-bottom: 10px;
+ 
+}
+input[placeholder] {
+    color:#929292;
+}
+#cancelBtn,
+#loginBtn {
+    padding: 2px;
+}
+
+#loginBtn{
+    background-color: #bada55;
+    color: darkgreen;
+    position: absolute;
+    right: 5px;
+    bottom:25px;
+}
+#cancelBtn {
+    position:absolute;
+    right: 55px;
+    bottom: 25px;
+}
+

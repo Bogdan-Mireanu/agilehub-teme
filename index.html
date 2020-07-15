@@ -3,126 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tema 1</title>
-    <style>
-        table {
-            border: 1px solid grey;
-        } 
-        th, td {
-            border: 1px solid gray;
-            padding: 15px;
-        }
-        form {
-            margin-top: 2em;
-        }
-        input {
-            margin: 1em 2em;
-        }
-    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th colspan="2"></th>
-                <th scope="col">Name</th>
-                <th scope="col">Mass (1024 kg)</th>
-                <th scope="col">Diameter (km)</th>
-            </tr>
-        </thead>
-        <thbody>
-            <tr>
-                <th colspan="2"rowspan="4" >Terrestrial planets</th>
-                <th>Mercury</th>
-                <td>0.330</td>
-                <td>4,879</td>
-            </tr>
-            <tr>
-                <th>Venus</th>
-                <td>4.87</td>
-                <td>12,104</td>
-            </tr>
-            <tr>
-                <th>Earth</th>
-                <td>5.97</td>
-                <td>12,756</td>
-            </tr>
-            <tr>
-                <th>Mars</th>
-                <td>0.642</td>
-                <td>6,792</td>
-            </tr>
-            <tr>
-                <th colspan="1" rowspan="4">Jovian planets</th>
-                <th colspan="1" rowspan="2">Gas giants</th>
-                <th>Jupiter</th>
-                <td>1898</td>
-                <td>142,984</td>
-            </tr>
-            <tr>
-                <th>Saturn</th>
-                <td>568</td>
-                <td>120,536</td>
-            </tr>
-            <tr>
-                <th colspan="1" rowspan="2">Ice giants</th>
-                <th>Uranus</th>
-                <td>86.8</td>
-                <td>51,118</td>
-            </tr>
-            <tr>
-                <th>Neptune</th>
-                <td>102</td>
-                <td>49,528</td>
-            </tr>
-            <tr>
-                <th colspan="2">Dwarf planets</th>
-                <th>Pluto</th>
-                <td>0.0146</td>
-                <td>2,370</td>
-            </tr>
-        </thbody>
-    </table>
-    
-    <form action="" method="post">
-        <fieldset>
-            <legend>Ask us about planets</legend>
-            <div>
-                <label for="fname">Full name</label>
-                <input type="text" id="fname" name="fname" required>
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <p>Favorite planet</p>
-            <input type="radio" name='planet' value="mercury">
-            <label for="mercury">Mercury</label><br>
-            <input type="radio" name='planet' value="venus">
-            <label for="venus">Venus</label><br>
-            <input type="radio" name='planet' value="earth" checked>
-            <label for="earth">Earth</label><br>
-            <input type="radio" name='planet' value="mars">
-            <label for="mars">Mars</label><br>
-            <input type="radio" name='planet' value="jupiter">
-            <label for="jupiter">Jupiter</label><br>
-            <input type="radio" name='planet' value="saturn">
-            <label for="saturn">Saturn</label><br>
-            <input type="radio" name='planet' value="uranus">
-            <label for="uranus">Uranus</label><br>
-            <input type="radio" name='planet' value="neptune">
-            <label for="neptune">Neptune</label><br>
-            <input type="radio" name='planet' value="pluto">
-            <label for="pluto">Pluto</label><br>
 
-            <input type="checkbox" name="terms" required>
-            <label for="terms">I agree to the <a href="https://www.unsite.com/termsandconditions">terms and conditions</a></label> <br>
-
-            <input type="reset" value="Reset">
-            <input type="submit" value="Ask away">
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod magnam
+            laudantium reprehenderit explicabo! Nostrum consectetur natus cum eum 
+            mollitia aperiam, aliquam facilis iure porro. Ratione esse laboriosam 
+            doloremque aut harum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptate
+            ut facilis, neque esse laudantium quam, quo nisi debitis illum cumque
+            nostrum dolore quod sunt magni ipsa labore laboriosam. Enim.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum cupiditate
+            laudantium ut commodi reprehenderit, incidunt delectus quasi aliquid sunt 
+            eum non veniam suscipit provident modi eos quidem aliquam a. Sed.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, porro. Atque
+            expedita enim animi beatae, praesentium nisi, ratione veniam odio voluptas
+            minus, porro inventore aperiam recusandae quos voluptatibus reprehenderit.
+            Molestias?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cum 
+            consequuntur atque nisi, itaque temporibus qui laborum fuga, consectetur 
+            saepe quis? Voluptatibus, non ad deleniti nesciunt ratione est tempore quam.</p>
+        <div class="container2"></div>
+        <form class="myForm">
+            <div class="formHeader">
+                <h1>Login</h1>
+                <button type="button" class="corner"> X </button>
+            </div>
+            <hr>
+            <div class="formContainer">
+                <div class="block">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                </div>
+                <div class="block">
+                    <label for="password">Pasword</label>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>  
+            </div>
+            <hr>
+            <div class="formFooter">
+                <button type="button" id="cancelBtn">Cancel</button>
+                <button type="button"id="loginBtn">Login</button>
+            </div>
             
-           
-        </fieldset>
-    </form>
+        </form>
+    </div>
+    
 </body>
 </html>
