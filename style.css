@@ -1,0 +1,557 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/* HEADER STYLING*/
+.header-container ul {
+    border-bottom: 2px solid rgb(223, 221, 221);
+}
+.header-container ul li {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+	color:rgb(112, 111, 111);
+	font-size:1.5rem;
+    padding: 1rem 0;
+}
+.header-container ul li:nth-child(n+1) {
+    border-left: 2px solid rgb(223, 221, 221);
+}
+
+.header-container ul li span{
+    width: 2rem;
+    color: rgb(245, 116, 11);
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-form {
+    height: 6vh;
+    margin-top: 2rem;
+    display: flex;
+}
+.header-form input {
+    padding: 10px;
+}
+.header-form select {
+    padding: 10px;
+}
+.header-form button {
+    padding: 10px 15px;
+    background-color: rgb(245, 116, 11);
+    border:0px solid rgb(255, 255, 255);
+}
+.fa-search {
+    color: rgb(248, 248, 245);
+}
+.header-social {
+    margin-top: 2rem;
+
+}
+/*Navigation menu*/
+.nav2, #myLinks, .navbar-image {
+    display: none;
+}
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(0, 0, 0);
+   
+}
+.nav .nav-list {
+    list-style-type: none;
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    margin-left: 4rem;
+}
+.nav ul li {
+   flex: 1 1 auto;  
+   
+}
+.nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-bottom: 2.6rem;
+}
+.nav ul a.active{
+    border-bottom: 3px solid rgb(245, 116, 11);
+}
+.nav ul a:hover{
+    border-bottom: 3px solid rgb(245, 116, 11);
+}
+.nav-cart {
+    background-color:rgb(245, 116, 11);
+    color: rgb(255,255,255);
+    text-align: center;
+    padding: 1rem 0.5rem;
+    margin: 0 6rem 0 0;
+}
+.cart-summary {
+    list-style-type: none;
+}
+.nav-cart span {
+    color: rgb(255,255,255);
+}
+/*slider*/
+.slider {
+    display: flex;
+    width: 100%;
+	margin: 0 auto;
+}
+.slider img {
+    width: 33.33%;
+}
+
+.slider img:nth-child(odd){
+    filter: blur(2px);
+    object-fit: cover;
+}
+
+/*promotions*/
+h1, p {
+    padding-top: 2rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin: 0 2rem;
+    line-height: 2rem;
+}
+h1 span {
+    color:rgb(245, 116, 11);
+}
+.card.women { grid-area: banner1; }
+.card.men {grid-area: banner2;}
+.promo1 {grid-area: promo1;}
+.promo2 {grid-area:promo2;}
+.promotion-cards {
+    display: grid;
+    grid-template-areas:
+    'banner1 promo1 banner2'
+    'banner1 promo2 banner2';
+    grid-gap: 10px;
+    padding: 10px;
+}
+.card {
+    padding-top: 2rem;
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+.card button {
+  border: none;
+  outline: 0;
+  padding: 0.7em;
+  color: white;
+  background-color:rgb(245, 116, 11);
+  text-align: center;
+  cursor: pointer;
+  width: 30%;
+  font-size: 1rem;
+}
+.card-content{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    font-size: 1.3rem;
+    line-height: 350%;
+}
+.card-content i {
+    text-decoration: line-through;
+}
+.card .men *{
+    color:rgb(255,255,255);
+    font-size: 1.6rem;
+    line-height: 250%;
+}
+.banner {
+    margin: 2rem;
+    padding: 1rem;
+    text-align: center;
+    border: 2px solid rgb(236, 235, 234);
+}
+
+.banner button{
+    border: none;
+    outline: 0;
+    padding: 0.7em;
+    color: white;
+    background-color:rgb(245, 116, 11);
+    text-align: center;
+    cursor: pointer;
+    width: 30%;
+    font-size: 1rem;
+}
+.banner-img, .banner-text{
+    padding: 0.5rem;
+}
+
+/*promotions2*/
+.promotion-cards2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'phone promo3 feet'
+    'promo4 watch feet' ;
+}
+.banner-img1{
+    grid-area: phone;
+   
+}
+ .banner-img2{
+    grid-area: watch;
+   
+}
+ .banner-img3{
+    grid-area: feet;
+   
+}
+ .banner-promo3{
+    grid-area: promo3;
+    background: rgb(243, 241, 241);
+   
+}
+ .banner-promo4{
+    grid-area: promo4;
+    background: rgb(243, 241, 241);
+}
+.banner-promo3, .banner-promo4 {
+
+    padding: 0 3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.banner-promo3 span, .banner-promo4 span{
+   color:rgb(245, 116, 11);
+   font-size: 3rem;
+}
+.banner-promo3 p, .banner-promo4 p{
+text-align: left;
+font-size: 2rem;
+}
+.banner-promo3 h3, .banner-promo4 h3{
+    margin-top: 0;
+}
+
+.product-tabs {
+    margin-left: 4rem;
+    width: 80%;
+    flex-direction: row;
+    text-align: center;
+    font-size: 2rem;
+    list-style: none;
+}
+.product-tab-item {
+    margin: 3rem 2rem ;
+    padding: 0 0 25px 0;
+    text-decoration: none;
+    color: rgb(156, 156, 156);
+    border-bottom: 2px solid rgb(156, 156, 156);
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    text-transform: Capitalize;
+    font-weight: 800;
+}
+.tab-active,
+.product-tab-item:hover {
+    color: rgb(0, 0, 0);
+    border-bottom:2px solid rgb(245, 116, 11);
+}
+
+.products-list {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product-item {
+    flex: 1;
+    position: relative;
+    box-shadow: 0px 0px 15px 0px #D6D6D6;
+    text-align: center;
+    margin: 1rem 2rem;
+    padding: 2rem;
+}
+.product-item *{
+    padding-bottom: 1rem;
+}
+.product-new-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(156, 156, 156);;
+    color: #fff;
+    padding: 0.3rem 0.8rem;
+    z-index: 10;
+    font-size: 1.2rem;
+}
+.product-name a{
+    color:rgb(245, 116, 11);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.item-price {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+del {
+    color: #A7A7A7;
+    margin-left: 10px;
+}
+.product-buy{
+    border: none;
+    outline: 0;
+    padding: 0.3em;
+    color: white;
+    background-color:rgb(245, 116, 11);
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    font-size: 1.2rem;
+}
+.card-content svg {
+    width: 10rem;
+    color: rgb(245, 116, 11);
+}
+
+.banner-benefits{
+    background: url("/layout/images/coupons.jpg") no-repeat center;
+    display: grid;
+    grid-template-areas: 
+    '. login select pay'
+    'text login select pay'
+    '. login select pay';
+    padding: 8rem;
+}
+.text {
+    grid-area: text;
+}
+.login {
+    grid-area: login;
+}
+.select {
+    grid-area: select;
+}
+.pay {
+    grid-area: pay;
+}
+
+.banner-item {
+    text-align: center;
+    padding: 2rem;
+}
+.banner-benefits h4 {
+    color:rgb(248, 248, 245)
+}
+.banner-benefits p {
+    color: rgb(156, 156, 156);
+    text-align: center;
+}
+.banner-benefits span{
+    background: rgb(245, 116, 11);
+    padding: 25px 24px;
+    border-radius: 100%;
+    color: #F3F3F3;
+    font-size: 24px;
+}
+.banner-benefits h3{
+    color:rgb(245, 116, 11);
+}
+@media only screen and (max-width: 768px){
+    .banner-benefits{
+        grid-template-areas: 
+        'text text text'
+        'login select pay'
+        'login select pay'
+        'login select pay' ;
+        padding: 4rem;
+    }
+    .text {
+        grid-area: text;
+    }
+    .login {
+        grid-area: login;
+    }
+    .select {
+        grid-area: select;
+    }
+    .pay {
+        grid-area: pay;
+    }
+}
+@media only screen and (max-width: 680px){
+    .promotion-cards2{
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .header-container ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    .header-container ul li {
+        width: 100%;
+    }
+    .header-container ul li:nth-child(n+1) {
+        border-left: 0;
+    }
+    .header {
+        margin-top: 1rem;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav {
+        display: none;
+    }
+    .nav2{
+        background-color: rgb(0, 0, 0);
+        height: 6rem;
+        display: flex;
+    }
+    .nav2 a{
+        color: white;
+        padding: 1rem 1rem;
+        font-size: 1.4rem;
+        display: block;
+        
+    }
+    #myLinks {
+        display: none;
+        background-color: rgb(0, 0, 0);
+        flex-direction: column;
+        align-items: center;
+        max-height: auto;
+        
+    }
+    #myLinks a{
+        text-decoration: none;
+        color: white;
+        margin-bottom: 2rem;
+    }
+
+    .fa.fa-bars{
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 0.4rem;
+        font-size: 3rem;
+    }
+    .cart {
+        background-color:rgb(245, 116, 11);
+        padding: 0 1rem;
+        position: absolute;
+        right: 2rem;
+    }
+    .cart:hover {
+        background-color: rgb(156, 156, 156);
+        cursor: pointer;
+    }
+
+    .cart * {
+        color: white;
+        list-style-type: none;
+    }
+    .cart-elements {
+        text-align: center;
+        padding-top: 1rem;
+    }
+    .navbar-image {
+        display: block;
+    }
+    .menu-image{
+        display: block; 
+    }
+    #myLinks a{
+        padding-bottom: 0.6rem;
+    }
+    #myLinks a.active{
+        border-bottom: 2px solid rgb(245, 116, 11);
+    }
+    #myLinks a:hover{
+        border-bottom: 2px solid rgb(245, 116, 11);
+    }
+    .fa-caret-down{
+        color: white;
+    }
+    .show{
+        display: block;
+    }
+    .men-submenu {
+        border-top: 2px solid grey;
+        border-bottom: 2px solid grey;;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.3rem;
+        line-height: 1%;
+        margin-bottom: 2rem;
+    }
+    .men-submenu img {
+        padding: 2rem 0;
+        min-width: 400px;
+        height: auto;
+    }
+    .card.women { grid-area: banner1; }
+    .card.men {grid-area: banner4;}
+    .promo1 {grid-area: banner2;}
+    .promo2 {grid-area:banner3;}
+    .promotion-cards {
+        display: grid;
+        grid-template-areas:
+        'banner1'
+        'banner2'
+        'banner3'
+        'banner4';
+        grid-gap: 10px;
+        padding: 10px;
+}
+    .products-list {
+        max-width: 75%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .banner-benefits{
+        min-height: 762px;
+        background: url("/layout/images/coupons2.jpg") no-repeat center;
+        background-size:cover;
+        grid-template-areas: 
+        'text text text'
+        'login login login'
+        'login login login'
+        'select select select'
+        'select select select'
+        'pay pay pay'
+        'pay pay pay';
+    }
+    .text {
+        grid-area: text;
+    }
+    .login {
+        grid-area: login;
+    }
+    .select {
+        grid-area: select;
+    }
+    .pay {
+        grid-area: pay;
+    }
+    .promotion-cards2{
+        display: none;
+    }
+    
+}
