@@ -1,128 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tema 1</title>
-    <style>
-        table {
-            border: 1px solid grey;
-        } 
-        th, td {
-            border: 1px solid gray;
-            padding: 15px;
-        }
-        form {
-            margin-top: 2em;
-        }
-        input {
-            margin: 1em 2em;
-        }
-    </style>
-</head>
-<body>
-    <table>
-        <thead>
-            <tr>
-                <th colspan="2"></th>
-                <th scope="col">Name</th>
-                <th scope="col">Mass (1024 kg)</th>
-                <th scope="col">Diameter (km)</th>
-            </tr>
-        </thead>
-        <thbody>
-            <tr>
-                <th colspan="2"rowspan="4" >Terrestrial planets</th>
-                <th>Mercury</th>
-                <td>0.330</td>
-                <td>4,879</td>
-            </tr>
-            <tr>
-                <th>Venus</th>
-                <td>4.87</td>
-                <td>12,104</td>
-            </tr>
-            <tr>
-                <th>Earth</th>
-                <td>5.97</td>
-                <td>12,756</td>
-            </tr>
-            <tr>
-                <th>Mars</th>
-                <td>0.642</td>
-                <td>6,792</td>
-            </tr>
-            <tr>
-                <th colspan="1" rowspan="4">Jovian planets</th>
-                <th colspan="1" rowspan="2">Gas giants</th>
-                <th>Jupiter</th>
-                <td>1898</td>
-                <td>142,984</td>
-            </tr>
-            <tr>
-                <th>Saturn</th>
-                <td>568</td>
-                <td>120,536</td>
-            </tr>
-            <tr>
-                <th colspan="1" rowspan="2">Ice giants</th>
-                <th>Uranus</th>
-                <td>86.8</td>
-                <td>51,118</td>
-            </tr>
-            <tr>
-                <th>Neptune</th>
-                <td>102</td>
-                <td>49,528</td>
-            </tr>
-            <tr>
-                <th colspan="2">Dwarf planets</th>
-                <th>Pluto</th>
-                <td>0.0146</td>
-                <td>2,370</td>
-            </tr>
-        </thbody>
-    </table>
-    
-    <form action="" method="post">
-        <fieldset>
-            <legend>Ask us about planets</legend>
-            <div>
-                <label for="fname">Full name</label>
-                <input type="text" id="fname" name="fname" required>
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <p>Favorite planet</p>
-            <input type="radio" name='planet' value="mercury">
-            <label for="mercury">Mercury</label><br>
-            <input type="radio" name='planet' value="venus">
-            <label for="venus">Venus</label><br>
-            <input type="radio" name='planet' value="earth" checked>
-            <label for="earth">Earth</label><br>
-            <input type="radio" name='planet' value="mars">
-            <label for="mars">Mars</label><br>
-            <input type="radio" name='planet' value="jupiter">
-            <label for="jupiter">Jupiter</label><br>
-            <input type="radio" name='planet' value="saturn">
-            <label for="saturn">Saturn</label><br>
-            <input type="radio" name='planet' value="uranus">
-            <label for="uranus">Uranus</label><br>
-            <input type="radio" name='planet' value="neptune">
-            <label for="neptune">Neptune</label><br>
-            <input type="radio" name='planet' value="pluto">
-            <label for="pluto">Pluto</label><br>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bogdan M - memory card game</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+       <div class="game-container">
+       
+            <aside>
+                <h1>Star Wars Memory Game Card</h1>
+                <p>You're score is: <span id="flips">0</span> FLIPS!</p>
+                <button onClick="window.location.reload();">Restart GAME</button>
+            </aside>
 
-            <input type="checkbox" name="terms" required>
-            <label for="terms">I agree to the <a href="https://www.unsite.com/termsandconditions">terms and conditions</a></label> <br>
+            <section class="card-container">
+            <div class="memory-card" data-image="c-3po">
+                <img class="front-cover" src="/C-3PO.jpg" alt="c-3po">
+                <img class="back-cover" src="/star wars.jpg" alt="star-wars">
+            </div>
+            <div class="memory-card" data-image="c-3po">
+                <img class="front-cover" src="/C-3PO.jpg" alt="c-3po">
+                <img class="back-cover" src="/star wars.jpg" alt="star-wars">
+            </div>
 
-            <input type="reset" value="Reset">
-            <input type="submit" value="Ask away">
-            
-           
-        </fieldset>
-    </form>
-</body>
+            <div class="memory-card" data-image="Chewbacca">
+                <img class="front-cover" src="/Chewbacca.png" alt="Chewbacca">
+                <img class="back-cover" src="/star wars.jpg" alt="star-wars">
+            </div>
+            <div class="memory-card" data-image="Chewbacca">
+                <img class="front-cover" src="/Chewbacca.png" alt="Chewbacca">
+                <img class="back-cover" src="/star wars.jpg" alt="star-wars">
+            </div>
+
+            <div class="memory-card" data-image="Darth-Vader">
+                <img class="front-cover" src="/darth.jpg" alt="Darth-Vader">
+                <img class="back-cover" src="/star wars.jpg" alt="star-wars">
+            </div>
+            <div class="memory-card" data-image="Darth-Vader">
+                <img class="front-cover" src="/darth.jpg" alt="Darth-Vader">
+                <img class="back-cover" src="/star wars.jpg" alt="star-wars">
+            </div>
+
+            <div class="memory-card" data-image="Han-Solo">
+                <img class="front-cover" src="/han.jpg" alt="Han-Solo">
+                <img class="back-cover" src="/star wars.jpg" alt="star-wars">
+            </div>
+            <div class="memory-card" data-image="Han-Solo">
+                <img class="front-cover" src="/han.jpg" alt="Han-Solo">
+                <img class="back-cover" src="/star wars.jpg" alt="star-wars">
+            </div>
+
+            <div class="memory-card" data-image="Jabba">
+                <img class="front-cover" src="/Jabba_the_Hutt.jpg" alt="Jabba">
+                <img class="back-cover" src="/star wars.jpg" alt="star-wars">
+            </div>
+            <div class="memory-card" data-image="Jabba">
+                <img class="front-cover" src="/Jabba_the_Hutt.jpg" alt="Jabba">
+                <img class="back-cover" src="/star wars.jpg" alt="star-wars">
+            </div>
+
+            <div class="memory-card" data-image="yoda">
+                <img class="front-cover" src="/Yoda.png" alt="yoda">
+                <img class="back-cover" src="/star wars.jpg" alt="star-wars">
+            </div>
+            <div class="memory-card" data-image="yoda">
+                <img class="front-cover" src="/Yoda.png" alt="yoda">
+                <img class="back-cover" src="/star wars.jpg" alt="star-wars">
+            </div>
+
+            <div class="memory-card" data-image="Luke">
+                <img class="front-cover" src="/images/luke.jpg" alt="Luke">
+                <img class="back-cover" src="images/star wars.jpg" alt="star-wars">
+            </div>
+            <div class="memory-card" data-image="Luke">
+                <img class="front-cover" src="/luke.jpg" alt="Luke">
+                <img class="back-cover" src="/star wars.jpg" alt="star-wars">
+            </div>
+
+            <div class="memory-card" data-image="R2-D2"> 
+                <img class="front-cover" src="/R2-D2.jpg" alt="R2-D2">
+                <img class="back-cover" src="/star wars.jpg" alt="star-wars">
+            </div>
+            <div class="memory-card" data-image="R2-D2">
+                <img class="front-cover" src="/R2-D2.jpg" alt="R2-D2">
+                <img class="back-cover" src="/star wars.jpg" alt="star-wars">
+            </div>
+
+            <div class="memory-card" data-image="Leia">
+                <img class="front-cover" src="/leia.jpg" alt="Leia">
+                <img class="back-cover" src="/star wars.jpg" alt="star-wars">
+            </div>
+            <div class="memory-card" data-image="Leia">
+                <img class="front-cover" src="/leia.jpg" alt="Leia">
+                <img class="back-cover" src="/star wars.jpg" alt="star-wars">
+            </div>
+
+            <div class="memory-card" data-image="Obi-Wan">
+                <img class="front-cover" src="/Obi-Wan.jpg" alt="Obi-Wan">
+                <img class="back-cover" src="/star wars.jpg" alt="star-wars">
+            </div>
+            <div class="memory-card" data-image="Obi-Wan">
+                <img class="front-cover" src="/Obi-Wan.jpg" alt="Obi-Wan">
+                <img class="back-cover" src="/star wars.jpg" alt="star-wars">
+            </div>
+        </section>
+
+       </div>
+        
+
+
+
+
+        <script src="app.js" async defer></script>  
+    </body>
 </html>

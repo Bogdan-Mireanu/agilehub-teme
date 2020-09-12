@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {font-family: "STARWARS"; src: url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.eot"); src: url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.woff") format("woff"), url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.svg#STARWARS") format("svg"); }
+
+body {
+    height: 100vh;
+    border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    background:radial-gradient(#f5f79e, #eef11c) ;
+    display: flex;
+    flex-direction: column;
+}
+aside {
+    margin:auto;
+    text-align: center;
+}
+
+h1 {
+    font-family: "STARWARS", arial;
+    font-size: 30px;
+    line-height: 1.6;
+    text-shadow: 4px 4px 4px #929290;
+}
+
+p{
+    padding: 1rem;
+    font-family: "STARWARS", arial;
+    font-size: 18px;
+}
+button {
+    margin-top: 1rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    padding: 0.2rem;
+    font-size: 1.5rem;
+    background: rgb(224, 220, 220);
+}
+.game-container {
+    display: flex;
+}
+.card-container {
+    width: 825px;
+    height: 660px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    perspective: 1000px;
+}
+
+.memory-card {
+    position: relative;
+    width: calc(20% - 10px);
+    height: calc(25% - 10px);
+    margin: 3px;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+.memory-card:active {
+    transform: scale(0.94);
+    transition: transform .1s;
+}
+.memory-card.flip{
+    transform: rotateY(180deg);
+}
+.front-cover,
+.back-cover  {
+    position: absolute;
+    border-radius: 10px;
+    background: rgb(241, 237, 237);
+    width: 100%;
+    height: 100%;
+    padding: 0.2rem;
+    backface-visibility: hidden;
+}
+.front-cover {
+    transform: rotateY(180deg);
+}
+
+
