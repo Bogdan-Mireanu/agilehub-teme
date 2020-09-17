@@ -1,0 +1,12 @@
+.app {
+  text-align: center;
+}
+
+.card.text-center {
+  width: 250px;
+  height: 500px;
+}
+.display-5 {
+  margin: 1rem;
+}
+
